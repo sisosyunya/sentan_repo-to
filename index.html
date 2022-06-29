@@ -5,98 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>先端社会デザイン創生発表</title>
 </head>
-<body>
+<!-- <body class="bg-secondary"> -->
+<body class="bg-dark">
     <div class="header">
         <!-- 1ヘッダー係 -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">認知工学</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Member</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">From</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="container-fluid">
+            <a class="navbar-brand  fw-bold" href="#">認知工学</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#test1">認知工学とは</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#test2">ヒューマンインターフェースとは</a>
+                </li>               
+              </ul>
             </div>
-          </nav>
-        <!-- ここまで -->
+          </div>
+        </nav>
+        
     </div>
-    <div class="container">
+    <div class="container ">
+      <img src="https://tk.ismcdn.jp/mwimgs/5/9/1200w/img_593c9508867d9d75ebe6f5c98fd23edd672510.jpg" class="img-fluid" width="70%" height="70%" alt=""><br>
+      <a href="test.html">テスト</a>
         <!-- 2html係 -->
-        <!-- cardクラス -->
-        <div class="card1" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <!-- cardクラスでカード作ってくれる-->
+        <!-- 下のsytle=...はcss適応してる（横幅） -->
+        <div class="card2" id="test1" style="width:50% ; height:30%;">
+          <!-- 下のやつは画像表示 -->
+            <img class="card-img-top" src="images/ninnti.png" alt="Card image cap" class ="img-fluid" >
+            <!-- カードの文字書かれてる部分 -->
             <div class="card-body">
+              <!-- カードのタイトル（文字濃くなってるやつ） -->
               <h5 class="card-title">認知工学とは</h5>
+              <!-- カードの説明 -->
               <p class="card-text">「認知科学や心理学の知見に基づき、人の認知や行動の特性を考
                 慮して、物の設計を試みる研究分野」である。</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">概要</h5>
+                <p class="card-text">いかにして行動を促すか、どのようにすれば​楽しいと感じるのかといったことを、人間の​認知特性や行動特性を考え設計する。</p>
+              <a href="https://www.youtube.com/" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-        <div class="card2" style="width: 18rem;">
+        
+     
+        <div class="card1" >
             <img class="card-img-top" src=".../100px180/" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">理由</h5>
+              <p class="card-text">情報の見せ方やシステムとのインタラクションの内容で、ユーザの行動や感じ方といったものは大きく変わってくるからである。</p>
+              <h5 class="card-title">具体例</h5>
+              <p class="card-text">色での男女の認識、ロード中のぐるぐる​　など</p>
             </div>
           </div>
-        <div class="card3" style="width: 18rem;">
+     
+          
+          <div class="card2" id="test2" >
             <img class="card-img-top" src=".../100px180/" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">ヒューマンインタフェイスとは</h5>
+              <p class="card-text">人間と機械が情報をやり取りするための手段や、そのための装置やインターフェイスの総称のこと</p>
+              
             </div>
           </div>
-          <div class="card2" style="width: 18rem;">
+          <div class="card1" >
             <img class="card-img-top" src=".../100px180/" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">例</h5>
+              <p class="card-text">機械が情報を伝える手段と、人間が指示を与える手段</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+
           </div>
-          <div class="card2" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+          <div class="card2" style="width:50% ; height:30%;">
+            <img class="card-img-top" src="images/speaker.png" alt="Card image cap"  >
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card2" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+              <h5 class="card-title">機械が情報を伝える手段</h5>
+              <p class="card-text">液晶画面、メーター、ランプ、スピーカーなど​</p>
+              <img class="card-img-top" src="images/mouse.png" alt="Card image cap"  height="200" width="100">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+              <h5 class="card-title">人間が指示を与える手段</h5>
+              <p class="card-text">スイッチ、ボタン、ハンドル、リモコン、キーボード、マウスなど</p>
+              <h5 class="card-title">目的</h5>
+              <p class="card-text">機械が間に入ってしまうことにより、発生してしまう分かりにくさを無くしていくことが、最も重要な目的である。</p> 
+              </div>
           </div>
-          <div class="card2" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+
+      
           </div>
+      
+          
+
 </body>
-<script src="javascript.js"></script>
+<script src="animtion.js"></script>
+
 </html>

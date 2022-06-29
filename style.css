@@ -1,11 +1,27 @@
 /* 2 */
 .card1{
-    background-color: aquamarine;
-}
-.card2{
-    background-color: silver;
+    background-color: black;
+     color:silver; 
 }
 
-.card3{
-    background-color: gray;
+.card-title{
+    color: rgb(73, 115, 165)
 }
+/* .firstcard{
+    color: brown;
+} */
+
+.card2{
+    background-color: silver;
+    color: black;
+}
+
+
+.card1{
+    width: 300%;
+}
+
+.card2{
+    width: 300%;
+}
+

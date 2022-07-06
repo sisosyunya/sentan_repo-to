@@ -4,7 +4,7 @@
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
-ul{list-style:none;}
+/* ul{list-style:none;} */
 table{border-collapse:collapse;border-spacing:0;}
 caption,th{text-align:left;}
 q:before,q:after{content:'';}
@@ -57,15 +57,39 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	}
   }
 
-.fade-in {
-	opacity: 0;
-	transition-duration: 500ms;
-	transition-property: opacity, transform;
-  }
-.scroll-in {
-	opacity: 1;
-	transform: translate(0, 0);
-  }
+
+/* はじめ画像をふわっと表示 */
+.img_first_fadeup{
+	animation-name:fadeInAnime;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	}
+	
+@keyframes fadeInAnime{
+	  from {
+		opacity: 0;
+	  }
+	
+	  to {
+		opacity: 1;
+	  }
+	}
+
+.side_animation{
+	margin: 0;
+	overflow: hidden;
+	animation: flowing-anim 3s;
+}
+@keyframes flowing-anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
 /* ヘッダー
 ------------------------------------------------------------*/
 #mainnav a{
@@ -93,8 +117,15 @@ h1, h2{
 img{
 	max-width: 100%;
 	height: auto;
+
 }
 
+.mini_img{
+	border-radius: 50px;
+	background: #EBECF0;
+	box-shadow:  5px 5px 20px #c8c9cc, 
+				 -5px -5px 20px #ffffff;
+}
 section{
   clear: both;
 }
@@ -159,7 +190,9 @@ section h2 span {
 	height: auto;
 }
 
-
+.col4{
+	margin-top: 20%;
+}
 /* SEC03 BRAND
 ------------------------------------------------------------*/
 .col4 .img{

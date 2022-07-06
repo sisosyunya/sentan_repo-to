@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>認知工学</title>
 	<link rel="stylesheet" media="all" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/animation.js"></script>
 </head>
 
@@ -13,7 +14,7 @@
 	<div id="wrapper">
 		<div id="sidebar">
 			<div id="sidebarWrap">
-				<!-- <h1><img src="images/logo.png" width="87" height="25" alt="logo"></h1> -->
+				<!--<h1><img src="images/logo.png" width="87" height="25" alt="logo"></h1>--> 
 				<h1>認知工学</h1>
 				<nav id="mainnav">
 					<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
@@ -22,9 +23,9 @@
 							<li><a href="#sec01">認知工学について</a></li>
 							<li><a href="#sec02">理由・具体例</a></li>
 							<li><a href="#sec03">ヒューマンインターフェース</a></li>
-							<li><a href="#sec04">目的</a></li>
-							<li><a href="#sec05">参考文献</a></li>
-							
+							<li><a href="#sec04">HMIと具体例</a></li>
+							<li><a href="#sec05">課題と展望</a></li>
+							<li><a href="#sec06">参考文献</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -32,25 +33,44 @@
 		</div>
 
 		<div id="content">
-			<p id="mainImg"><img src="images/tv.jpg" alt=""></p>
+			<p id="mainImg"><img class="img_first_fadeup" src="images/tv.jpg" alt=""></p>
 			<section class="main" id="sec01">
 				<header>
 					<h2><span>認知工学とは</span></h2>
 				</header>
 				<div class="innerS">
-					「認知科学や心理学の知見に基づき、人の認知や行動の特性を考慮して、物の設計を試みる研究分野」である。認知科学の人の心や思考などを情報理論として研究しているものと、心理学の人の心の動きとそれによっておこる行動を探求しているものから、人を中心に考えたシステムを設計するものである。要約すると、いかにして行動を促すか、どのようにすれば​楽しいと感じるのかといったことを、人間の​認知特性や行動特性を考え設計するということである。​​
+					<p>認知工学とは、<b>「認知科学や心理学の知見に基づき、人の認知や行動の特性を考慮して、物の設計を試みる研究分野」</b>である。</p>
+					<p>認知科学の人の心や思考などを情報理論として研究しているものと、心理学の人の心の動きとそれによっておこる行動を探求しているものから、人を中心に考えたシステムを設計するものである。</p>
+					<p>要約すると、いかにして行動を促すか、どのようにすれば​楽しいと感じるのかといったことを、人間の​認知特性や行動特性を考え設計するということである。​​</p>
 				</div>
 			</section>
 
-			<section id="sec02">
+			<section id="sec01">
+				<header>
+					<h2><span>背景</span></h2>
+				</header>
+				<div class="innerS">
+					道具や機械など人工物の設計をおこなうときに、ユーザや消費者の認知や行動の特性への配慮は不可欠である。<br>
+					こうした問題意識は、すでに第一次世界大戦（1914ー18）の頃からアメリカで、使いやすい兵器の開発を契機に工学関係者に共有され、それが、第二次世界大戦を経て<b>「人間工学」</b>という新たな研究領域を生み出した。<br>
+					そこから発展し、<b>「認知工学」</b>となった。「認知工学」のねらいも、人間工学のそれと基本的には同じである。
+					両者の違いは、一つは、対象とする道具や機械にある。<br>
+					もう一つの違いは、人間工学では、「使いやすい」道具/機械の設計のために、人の物理的、生理的特性のほうに主たる関心を向けるのに対して、認知工学では、「わかりやすい」情報環境の設計のために、人の認知特性のほうにより関心を向けるところにある。<br><br> 
+					こうした違いは、道具や機械の時代変化を反映している。２０世紀後半、コンピュータのパワーアップと普及に伴い、社会の至るところで「もの（物）」から「こと（情報）」への劇的なパラダイムシフトが起こった。<br>
+					社会が情報の生産、流通、消費を中軸とする情報化社会になってきた。よって、人間工学に加えて新たに、認知工学を必要とする時代の流れが出てきた。
+				</div>
+
+			</section>
+
+			<section id="sec01">
 				<header>
 					<h2><span>理由・具体例</span></h2>
 				</header>
-				<div class="innerS">
-					理由：情報の見せ方やシステムとのインタラクションの内容で、ユーザの行動や感じ方といったものは大きく変わってくる。<br>
-					具体例： 色での男女の認識、ロード中のぐるぐる
+				<div class="innerS ">
+					<b>理由</b>：人間の認知・行動には得意，不得意，傾向がある。
+					情報の見せ方やシステムとのインタラクションの内容で、ユーザの行動や感じ方といったものは大きく変わってくる。​<br>
+					<b>具体例</b>： 色での男女の認識、ロード中のぐるぐる
 					緊急時の大文字や！、クリックするときの指マーク<br>
-					➡そのため人に対し、行動誘発や行動誘導を行おうということである
+					➡そのため人に対し、人間の認知特性・行動特性を考えて設計し、行動誘発や行動誘導を行おうということである。
 				</div>
 				<ul id="gallery">
 				<!-- なんかリスト作れる -->
@@ -60,91 +80,158 @@
 			</section>
 
 			<section id="sec02">
-				<p id="mainImg"><img src="images/brain.jpg" alt=""></p>
-
 				<header>
 					<h2><span>具体例</span></h2>
 				</header>
 				<div class="inner">
 					<ul class="col4">
 						<li>
-							<p class="img"><img src="images/mouse.png" width="168" height="168" alt=""></p>
+							<p class="img"><img src="images/dannjyo.png" width="168" height="168" class=mini_img alt=""></p>
 							<p>色での男女の認識</p>
 						</li>
 						<li>
-							<p class="img"><img src="images/mouse.png" width="168" height="168" alt=""></p>
+							<p class="img"><img src="images/ro-do.jpeg" width="168" height="168" class=mini_img alt=""></p>
 							<p>ロード中の待機</p>
 						</li>
 						<li>
-							<p class="img"><img src="images/ninnti.png" width="168" height="168" alt=""></p>
+							<p class="img"><img src="images/kinnkyuu.jpeg" width="168" height="168" class=mini_img alt=""></p>
 							<p>緊急時の大文字や！</p>
 						</li>
 						<li>
-							<p class="img"><img src="images/ninnti.png" width="168" height="168" alt=""></p>
+							<p class="img"><img src="images/yubi.png" width="168" height="168" class=mini_img alt=""></p>
 							<p>クリックするときの指マーク</p>
 						</li>
 					</ul>
 				</div>
+				<hr>
 			</section>
 
 			<section id="sec03">
 				<header>
 					<h2><span>ヒューマンインターフェイス</span></h2>
 				</header>
-				<div class="inne">
+				<div class="inner">
 					<div class="article">
-						<img src="images/ninnti.png" width="370" height="224" alt="">
-						<p>人間と機械が情報をやり取りするための手段や、そのための装置やインターフェイスの総称のこと</p>
-						<p></p>
-					</div>
-					<div class="article">
-						<img src="images/ninnti.png" width="370" height="224" alt="">
-						<p></p>
-						<p>人間が機械を操作したり、機械が現在の状態や結果を人間に知らせることやそのための道具のことを指す</p>
+						<div class="article">
+							<img src="images/nou.jpg" width="370" height="224" class=mini_img alt="">
+							<p>ヒューマンは人間のことを意味する。</p>
+							<p>インターフェースは接点、境界面、接触面、接合面、仲立ち、橋渡しなどの意味する言葉である。コンピュータでは、キーボードなどの人間が直接利用する入出力装置や、データの入力画面などのソフトウェアやアプリケーションがこれに当たる。</p>
+							<p>つまり、ヒューマンインタフェースの意味は「人間と機械との接点のこと」である。</p>
+						</div>
+						<img src="images/info.jpg" width="370" height="224" class=mini_img alt="">
+						<p>人間と機械が情報をやり取りするための手段や、そのための装置やインターフェイスの総称のことである。</p>
+						<p>人間が機械を操作したり、機械が現在の状態や結果を人間に知らせる手段やそのための道具のことを指す。</p>
+						<p>機械が情報を伝える手段としては液晶画面やメーター、ランプ、スピーカーなどが含まれ、人間が指示を与える手段としてはスイッチやボタン、ハンドル、ダイヤル、ペダル、リモコン、マイク、キーボード、マウスなどが含まれる。</p>
 					</div>
 				</div>
 			</section>
+
+			<section id="sec03">
+				<header>
+					<h2><span>目的</span></h2>
+				</header>
+				<div class="innerS">
+					<p>私たちが機械を使用する目的は、機械を操作することではなく、​機械を使用して実世界の対象物に変化を加えることである。​
+					そのため、機械が介在していることを意識することなく、操作することが良いことである。​</p>
+					<p>対象物を変化させたいとき、人間の機械による作業が入ってしまうことは、直感的な作業を害する。​
+					機械が間に入ってしまうことにより、発生してしまう<b>分かりにくさを無くしていくこと</b>が、最も重要な目的である。​</p>
+				</div>
+				<p id="mainImg"><img  src="images/brain.jpg" alt=""></p>
+				<hr>
+			</section>
+
+			<section id="sec04">
+				<header>
+					<h2><span>ヒューマンマシンインターフェース</span></h2>
+				</header>
+				<div class="innerS">
+					ヒューマンマシンインターフェースとは、人間が機械を操作し、機械が操作結果や現在の状態を人間に知らせる手段のことである。しばしばHMIと略される。<br>
+					現在の機械は複雑化・高度化しており、その進化は将来も続くだろう。HMIもそれに追随した改善が求められている。また、ユーザーの多様化やユーザーが求める体験への対応に対してもHMIが果たす役割は非常に大きいと言える。
+					例として3つ挙げる。
+				</div>
+				<ul id="gallery">
+				<!-- なんかリスト作れる -->
+				<li>aaa</li>
+				<li>aaa</li>
+				</ul>
+			</section>
+
+			<section id="sec04">
+				<header>
+					<h2><span>具体例</span></h2>
+				</header>
+				<div class="innerS">
+					<p><strong><font size="3">触覚フィードバッグ</font></strong></p>
+					ボタンやスイッチだったところをタッチパネルに置き換える動きがあるが、ボタンのように指の触覚で押し終わったことが分からない、視覚に障がいがある人にはボタンの場所が分からないという欠点がある。
+					これを補う技術として触覚フィードバックという技術が期待されている。iPhoneではOSバージョン13以降で触覚タッチという機能が実装され、Nintendo Switchは触覚フィードバック機能を売りにしている。
+					車載分野では、運転手がタッチパネルを見つめることは危険なため、触覚でパネル上のボタンの位置を把握して操作ができるような技術開発が進められている。
+					        
+<>font 					<p><strongsize=>AIスピーカー</strongsi></p>
+					人と人の主なインターフェースは会話、つまりは音声である。人と機械のインターフェースにも音声を用いることは自然な発想である。
+					近年、AIスピーカーやスマートスピーカーなどと言われる商品が登場した。スマートフォンやPCのような機械自体にその機能を搭載したものはAIアシスタントと呼ばれている。
+					音声インターフェースの良い点は両手と視線が自由になることである。自然なHMIでもあるので、今後の音声認識・音声合成技術の精度向上が期待される。
+					<p><strong>アイトラッキング</strong></p>
+					視線をHMIに活用することも考えられている。例えば、PCを操作する際に、視線でマウスカーソルを動かして、長めのまばたきでクリックする、というような活用方法だ。
+					アイトラッキングが実用化すれば両手が自由になる可能性があり、前項の音声インターフェースも同様に、身体障がい者にも利益のあるHMIと言える。
+					<ul class="col4">
+						<li>
+							<p class="img"><img src="images/n-switch.png" width="168" height="168" class=mini_img alt=""></p>
+							<p>触覚フィードバッグ</p>
+						</li>
+						<li>
+							<p class="img"><img src="images/ais.png" width="168" height="168" class=mini_img alt=""></p>
+							<p>AIスピーカー</p>
+						</li>
+						<li>
+							<p class="img"><img src="images/eye.png" width="168" height="168" class=mini_img alt=""></p>
+							<p>アイトラッキング</p>
+						</li>
+					</ul>
+				</div>
+				<hr>
+			</section>
+
+			<section id="sec05" >
+				<header>
+					<h2><span>課題と展望</span></h2>
+				</header>
+				<div class="innerS">
+					<p><strong>課題</strong></p>
+					開発にあたっては、人間の能力と限界を常に考慮する必要がある。マシンの操作は、複雑すぎたり、過度の熟練を要するものであってはならない。人間とマシンが円滑にコミュニケーションするためには、コマンドと動作の間の応答時間をできるだけ短くする必要があり、そうでなければユーザーにはそのインタラクションが不自然に感じられる。
+					<p><strong>展望</strong>​</p>
+					将来は、様々なセンサーから得られるますます多くのデータを結合して、複雑なプロセスを把握して制御できるようになるだろう。<br>
+					そして、リモコン、コンピュータキーボード、オンオフスイッチなど、今は普通に使われている入力デバイスは少なくなっていくと予想される。<br>
+					コンピュータシステム、デバイス、マシンが学習を続けて、さらに多くのデータを取得すれば、ますます人間に似てくることになり、そうなると感覚器官の役割を引き受けることになる。<br>
+					カメラは視覚を、マイクは聴覚を、センサー内蔵の衣服は触覚を実現するだろう。<br>
+					<!--インフィニオンは、センサーの助けを借りて、人間の感覚をより良好に再現しようとしている。アンドレアス・ウルシッツは次のように述べている。「ガスセンサーは『においをかぐ』ことができ、3Dカメラは機器の『視力』を向上します。」
+					マシンは、センサーの助けを借りて、周囲で何が起こっているかを分析している。その結果として、まったく新しい形態のインタラクションが生まれる。<br>
+					ウルシッツは、次のような例を挙げている。「ガスセンサー付きの携帯電話が、近くでバーガーの焼けるにおいを感じ、デジタルアシスタントは、セール中のバーガーがあればメニューを見るように勧め、それと同時に機器は、知覚指向のセンサーによってユーザーのボディランゲージを解釈して応答するようになる。」-->
+				</div>
+				<hr>
+			</section>
+
+			<section id="sec06">
+				<header>
+					<h2><span>参考文献</span></h2>
+				</header>
+				<div class="innerS">
+					<ul>
+						<li><a href ="./2021FSD.pdf">2021FSD概論_泉</a></li>
+						<li><a href ="https://blog.goo.ne.jp/hkaiho/e/046450de1f9207eea41b693dc521e735">認知工学とは - 心の風景　認知的体験 (goo.ne.jp)</a></li>
+						<li><a href ="https://www.monodukuri.com/gihou/article_list/225/%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9#:~:text=%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%81%A8%E3%81%AF%E3%80%81%E4%BA%BA%E9%96%93%E3%81%A8%E6%A9%9F%E6%A2%B0%E3%81%8C%E6%83%85%E5%A0%B1%E3%82%92%E3%82%84%E3%82%8A%E5%8F%96%E3%82%8A%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E6%89%8B%E6%AE%B5%E3%82%84%E3%80%81%E3%81%9D%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%A3%85%E7%BD%AE%E3%82%84%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AA%E3%81%A9%E3%81%AE%E7%B7%8F%E7%A7%B0%E3%81%A7%E3%81%99%E3%80%82,%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%81%AF%E4%BA%BA%E9%96%93%E3%81%8C%E6%A9%9F%E6%A2%B0%E3%82%92%E6%93%8D%E4%BD%9C%E3%81%97%E3%81%9F%E3%82%8A%E3%80%81%E6%A9%9F%E6%A2%B0%E3%81%8C%E7%8F%BE%E5%9C%A8%E3%81%AE%E7%8A%B6%E6%85%8B%E3%82%84%E7%B5%90%E6%9E%9C%E3%82%92%E4%BA%BA%E9%96%93%E3%81%AB%E7%9F%A5%E3%82%89%E3%81%9B%E3%82%8B%E6%89%8B%E6%AE%B5%E3%82%84%E3%81%9D%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E9%81%93%E5%85%B7%E3%81%AE%E3%81%93%E3%81%A8%E3%82%92%E6%8C%87%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%20%E6%A9%9F%E6%A2%B0%E3%81%8C%E6%83%85%E5%A0%B1%E3%82%92%E4%BC%9D%E3%81%88%E3%82%8B%E6%89%8B%E6%AE%B5%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AF%E6%B6%B2%E6%99%B6%E7%94%BB%E9%9D%A2%E3%82%84%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC%E3%80%81%E3%83%A9%E3%83%B3%E3%83%97%E3%80%81%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%AA%E3%81%A9%E3%81%8C%E5%90%AB%E3%81%BE%E3%82%8C%E3%80%81%E4%BA%BA%E9%96%93%E3%81%8C%E6%8C%87%E7%A4%BA%E3%82%92%E4%B8%8E%E3%81%88%E3%82%8B%E6%89%8B%E6%AE%B5%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AF%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%82%84%E3%83%9C%E3%82%BF%E3%83%B3%E3%80%81%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AB%E3%80%81%E3%83%80%E3%82%A4%E3%83%A4%E3%83%AB%E3%80%81%E3%83%9A%E3%83%80%E3%83%AB%E3%80%81%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3%E3%80%81%E3%83%9E%E3%82%A4%E3%82%AF%E3%80%81%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%80%81%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%AA%E3%81%A9%E3%81%8C%E5%90%AB%E3%81%BE%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82">
+						ヒューマンインターフェイスとは、人間と機械が情報をやり取りするための手段や、そのための装置やソフトウェアなどの総称です。 (monodukuri.com)</a></li>
+						<li><a href ="https://learning.zealseeds.com/contents/text/IPA/technology/human-interface/index.html">ヒューマンインターフェースとは―意味とWebのパンくずの例など。 (zealseeds.com)</a></li>
+						<li><a href ="https://jpn.nec.com/embedded/domain/machinery/05_hmi.html">産業機械に求められるヒューマンマシンインターフェースとは | NEC</a></li>
+						<li><a href ="https://www.infineon.com/cms/jp/discoveries/human-machine-interaction/">ヒューマンマシンインタラクションの現在と未来 - Infineon Technologies</a></li>
+						<a href =""></a>
+					</ul>
+				</div>
+			</section>
+
 		</div>
 	</div>
 </body>
 </html>
 
-<section id="sec04">
-	<header>
-		<h2><span>具体例</span></h2>
-	</header>
-	<div class="inner">
-		<p>機械が情報を伝える手段</p>
-		<ul class="col4">
-			<li>
-				<p class="img"><img src="images/mouse.png" width="168" height="168" alt=""></p>
-				<p>メーター</p>
-			</li>
-			<li>
-				<p class="img"><img src="images/mouse.png" width="168" height="168" alt=""></p>
-				<p>スピーカー</p>
-			</li>
-		<p>人間が指示を与える手段</p>
-			<li>
-				<p class="img"><img src="images/ninnti.png" width="168" height="168" alt=""></p>
-				<p>スイッチ</p>
-			</li>
-			<li>
-				<p class="img"><img src="images/ninnti.png" width="168" height="168" alt=""></p>
-				<p>マウス</p>
-			</li>
-		</ul>
-	</div>
-	<section id="sec05">
-		<header>
-			<h2><span>目的</span></h2>
-		</header>
-		<div class="innerS">
-			<p>私たちが機械を使用する目的は、機械を操作することではなく、​機械を使用して実世界の対象物に変化を加えることである。​
-			機械が介在していることを意識することなく、操作することが良いことである。​</p>
-			<p>対象物を変化させたいとき、人間の機械による作業が入ってしまうことは、直感的な作業を害する。​</p>
-			<p>機械が間に入ってしまうことにより、発生してしまう分かりにくさを無くしていくことが、最も重要な目的である。​</p>
-		</div>
-	</section>
 
-</section>
+

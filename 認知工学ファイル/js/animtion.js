@@ -1,14 +1,11 @@
 
-let controller = new ScrollMagic.Controller();
-  anime({
-      targets: ".mini_img", // 対象を指定
-      rotate:1800,
-      // translateX: 250,
-      // rotate: 360,
-      // direction: 'alternate',
 
-      // duration: 3000, // ミリ秒指定
-      // loop: true, // 繰り返し
-      // easing: "easeInOutCubic" // 加減速の種類
-    });
-  
+window.addEventListener('scroll', function() {
+  // ターゲットの画面トップからの距離
+  var target = document.querySelector('.fade-up_list');
+  target_position = document.querySelector('.fade-up_list').getBoundingClientRect().top;
+  // 画面のトップからの距離
+  if (target_position < this.window.innerHeight){
+    target.classList.add('fadeUp');
+}});
+

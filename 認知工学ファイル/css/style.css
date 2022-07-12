@@ -3,13 +3,15 @@
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
-/* table{border-collapse:collapse;border-spacing:0;} */
-/* caption,th{text-align:left;} */
-/* object,embed{vertical-align:top;} */
-/* legend{display:none;} */
-h1,h2,h3,h4,h5,h6{font-size:100%;}
-/* img,abbr,acronym,fieldset{border:0;} */
 
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+img,abbr,acronym,fieldset{border:0;}
 body{
 	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
 	font-weight: 300;
@@ -28,28 +30,26 @@ a:hover, .active{
   text-decoration: underline;
 }
 
-a:active, a:focus,input:active, input:focus{outline:0;}
-
 /* 初めの文字のアニメーション */
 .scrolldown1{
-    /*描画位置※位置は適宜調整してください*/
+/*描画位置※位置は適宜調整してください*/
   position:absolute;
   left:50%;
   bottom:10px;
-    /*全体の高さ*/
-  height:100px;
+/*全体の高さ*/
+  height:10%;
 }
 
 /*Scrollテキストの描写*/
 .scrolldown1 span{
     /*描画位置*/
-	font-size: large;
+  font-size: large;
   position: absolute;
   left:-15px;
   top: -15px;
     /*テキストの形状*/
   color: rgb(238, 238, 238);
-  font-size: 0.7rem;
+  font-size: 2rem;
   letter-spacing: 0.05em;
 }
 
@@ -60,12 +60,15 @@ a:active, a:focus,input:active, input:focus{outline:0;}
   position: absolute;
   top: 0;
     /*線の形状*/
-  width: 1px;
-  height: 100px;
+  width: 3px;
+  height: 3000px;
+  /* height: 100px; */
   background: rgb(176, 53, 53);
     /*線の動き1.4秒かけて動く。永遠にループ*/
   animation: pathmove 1.4s ease-in-out infinite;
   opacity:0;
+  margin-top: 27px;
+  margin-left: 20px;
 }
 
 /*高さ・位置・透過が変化して線が上から下に動く*/
@@ -86,45 +89,32 @@ a:active, a:focus,input:active, input:focus{outline:0;}
   }
 }
 
-/*========= レイアウトのためのCSS ===============*/
+  #header{
+	width:100%;
+	height: 100vh;
+	position: relative;
+  } 
+  
+  #header:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	/* z-index:-1; */
+	width:100%;
+	height: 100vh;
+	/*背景画像設定*/
+	background-image: url("../images/tv.jpg") ;
+	/* background:url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-1-1/img/01.jpg") no-repeat ; */
+	background-size:cover;
+  }
 
-h1{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  color:#eee;
-  text-shadow: 0 0 15px #666;
-  text-align: center;
-}
-
-#header{
-  width:100%;
-  height: 100vh;
-  position: relative;
-} 
-
-#header:before{
-  content: '';
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:-1;
-  width:100%;
-  height: 100vh;
-  /*背景画像設定*/
-  background:url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-1-1/img/01.jpg") no-repeat center;
-  background-size:cover;
-}
-
-#container{
-  position: relative;
-  z-index:1;
-  background:#eee;
-  padding:600px 0;
-  text-align: center;
-}
-
+  #container{
+	position: relative;
+	z-index:1;
+	background:#eee;
+	padding:20px 0;
+  }
 
 /* アニメーション */
 .main span {
@@ -204,15 +194,6 @@ h1{
 	color: #000;
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
-
-
-#footer{
-	clear: both;
-	padding: 50px 10px 50px 0;
-	text-align: center;
-	font-size: 12px;
-}
-
 
 h1, h2{
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
@@ -354,9 +335,7 @@ section h2 span {
 	border: 0;
 }
 
-
 /* レスポンシブ */
-
 @media only screen and (min-width: 800px){
 	body{
 		font-size:14px;
@@ -368,6 +347,7 @@ section h2 span {
 	
 	#content{
 		width: 80%;
+		position: relative;
 	}
 	
 	#sidebar{

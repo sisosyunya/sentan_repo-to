@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width">
 	<title>認知工学</title>
 	<link rel="stylesheet" media="all" href="css/style.css">
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
 	<script src="./js/animtion.js"></script>
 </head>
 
@@ -20,6 +21,7 @@
 					<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
 					<div class="panel">
 						<ul>
+							<li><img src="./images/brain2.png" alt=""></li>
 							<li><a href="#sec01">認知工学について</a></li>
 							<li><a href="#sec02">理由・具体例</a></li>
 							<li><a href="#sec03">ヒューマンインターフェース</a></li>
@@ -33,10 +35,12 @@
 		</div>
 
 		<div id="content">
-			<div class="scrolldown1"><span>Scroll</span></div>
-			<p id="mainImg"><img class="img_first_fadeup" src="images/tv.jpg" alt=""></p>
+			<!-- <p id="mainImg"><img class="img_first_fadeup" src="images/tv.jpg" alt=""></p> -->
+			<header id="header">
+			  <div class="scrolldown1"><span>Scroll</span></div>
+			</header>
+			<div id="container">
 			<section class="main" id="sec01">
-				<header>
 					<h2><span>認知工学とは</span></h2>
 				</header>
 				<div class="innerS">
@@ -66,7 +70,7 @@
 				<header>
 					<h2><span>理由・具体例</span></h2>
 				</header>
-				<div class="innerS ">
+				<div class="innerS">
 					<b>理由</b>：人間の認知・行動には得意，不得意，傾向がある。
 					情報の見せ方やシステムとのインタラクションの内容で、ユーザの行動や感じ方といったものは大きく変わってくる。​<br>
 					<b>具体例</b>： 色での男女の認識、ロード中のぐるぐる
@@ -87,7 +91,7 @@
 				<div class="inner">
 					<ul class="col4">
 						<li>
-							<p class="img"><img src="images/dannjyo.png" width="168" height="168" class=mini_img alt=""></p>
+							<p class="img wow bounce"><img src="images/dannjyo.png" width="168" height="168" class=mini_img alt=""></p>
 							<p>色での男女の認識</p>
 						</li>
 						<li>
@@ -232,6 +236,7 @@
 
 		</div>
 	</div>
+</div>
 </body>
 </html>
 

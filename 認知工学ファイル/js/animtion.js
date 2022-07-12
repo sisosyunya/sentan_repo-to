@@ -1,4 +1,4 @@
-
+// new Wow().init();
 
 window.addEventListener('scroll', function() {
   // ターゲットの画面トップからの距離
@@ -8,4 +8,3 @@ window.addEventListener('scroll', function() {
   if (target_position < this.window.innerHeight){
     target.classList.add('fadeUp');
 }});
-
